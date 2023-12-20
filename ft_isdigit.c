@@ -5,16 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauescob <pauescob@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/05 21:31:22 by pauescob          #+#    #+#             */
-/*   Updated: 2023/12/05 22:08:12 by pauescob         ###   ########.fr       */
+/*   Created: 2023/12/13 19:18:15 by pauescob          #+#    #+#             */
+/*   Updated: 2023/12/19 20:21:20 by pauescob         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(char n)
+int	ft_isdigit(int c)
 {
-    if (n < '0' || n > '9')
-    {
-        return (0);
-    }
-    return (1);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
