@@ -1,20 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauescob <pauescob@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/05 21:20:49 by pauescob          #+#    #+#             */
-/*   Updated: 2023/12/28 19:19:46 by pauescob         ###   ########.fr       */
+/*   Created: 2023/12/23 12:11:14 by pauescob          #+#    #+#             */
+/*   Updated: 2023/12/23 12:11:14 by pauescob         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
-{	
-	int c = 'd';
-	int res = ft_toupper(c);
-	printf("%c", res);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+{
+	size_t i;
+	size_t length;
+	size_t j;
+
+	i = 0;
+	j = 0;
+	while (src[i] != '\0')
+	{
+		i++;
+	}
+	length = i;
+
+	if (size == 0)
+	{
+		return (length);
+	}
+	else
+	{
+		while (j < size - 1 && src[j] != '\0')
+		{
+			dst[j] = src[j];
+			j++;
+		}
+		dst[j] = '\0';
+		return (length);
+
+	}
 }

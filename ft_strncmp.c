@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauescob <pauescob@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/05 21:20:49 by pauescob          #+#    #+#             */
-/*   Updated: 2023/12/28 19:19:46 by pauescob         ###   ########.fr       */
+/*   Created: 2023/12/28 19:37:31 by pauescob          #+#    #+#             */
+/*   Updated: 2023/12/28 19:37:31 by pauescob         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
-{	
-	int c = 'd';
-	int res = ft_toupper(c);
-	printf("%c", res);
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+	size_t	i;
+	
+	i = 0;
+	while (s1[i] == s2[i])
+	{
+		
+	}
 }

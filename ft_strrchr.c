@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pauescob <pauescob@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/05 21:20:49 by pauescob          #+#    #+#             */
-/*   Updated: 2023/12/28 19:19:46 by pauescob         ###   ########.fr       */
+/*   Created: 2023/12/28 19:35:24 by pauescob          #+#    #+#             */
+/*   Updated: 2023/12/28 19:35:24 by pauescob         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
-{	
-	int c = 'd';
-	int res = ft_toupper(c);
-	printf("%c", res);
+char	*ft_strrchr(const char *s, int c)
+{
+	
 }
